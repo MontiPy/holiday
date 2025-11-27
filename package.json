@@ -1,0 +1,12 @@
+{
+  "name": "thanksgiving-gratitude",
+  "version": "1.0.0",
+  "description": "A Thanksgiving gratitude board app with Supabase backend",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "echo 'Open index.html in your browser'"
+  },
+  "keywords": ["thanksgiving", "gratitude", "supabase"],
+  "author": "",
+  "license": "MIT"
+}
