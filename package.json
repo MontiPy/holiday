@@ -1,5 +1,5 @@
 {
-  "name": "thanksgiving-gratitude",
+  "name": "thanksgiving_gratitude",
   "version": "1.0.0",
   "description": "A Thanksgiving gratitude board app with Supabase backend",
   "scripts": {
