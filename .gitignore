@@ -1,0 +1,7 @@
+# Ignore local backend secrets/config
+backend.config.js
+backend.config.*.js
+
+# OS junk
+.DS_Store
+Thumbs.db

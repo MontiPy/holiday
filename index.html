@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanksgiving Greeting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-layer texture"></div>
+  <div class="bg-layer glow"></div>
+
+  <header class="section hero">
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <p class="eyebrow">Harvest Gathering · 2024</p>
+        <h1>Happy Thanksgiving — from our table to yours</h1>
+        <p class="lede">
+          We’re saving a seat for you. Come hungry, leave cozy, and carry home a few extra slices of gratitude.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#gratitude">Leave a warm note</a>
+          <a class="btn ghost" href="#details">Peek at the plans</a>
+        </div>
+
+        <div class="hero-info">
+          <div class="info-card">
+            <span class="label">Next feast day</span>
+            <div class="info-main" id="thanksgiving-date">Fourth Thursday in November</div>
+            <small id="countdown">Counting down...</small>
+          </div>
+          <div class="info-card">
+            <span class="label">Menu highlights</span>
+            <div class="chips">
+              <span class="chip">Maple-brined turkey</span>
+              <span class="chip">Sweet potato brûlée</span>
+              <span class="chip">Cranberry citrus glaze</span>
+              <span class="chip">Midnight pie & decaf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="table-card">
+          <div class="table-top">
+            <span class="plate">🥧</span>
+            <span class="plate">🥖</span>
+            <span class="plate">🧡</span>
+          </div>
+          <div class="table-leg"></div>
+          <p class="table-caption">The coziest seat is already yours.</p>
+        </div>
+        <div class="floating-note">
+          <p class="label">Bring along</p>
+          <ul>
+            <li>A favorite story</li>
+            <li>Something to toast</li>
+            <li>Room for seconds</li>
+          </ul>
+        </div>
+        <div class="leaf leaf-a"></div>
+        <div class="leaf leaf-b"></div>
+        <div class="leaf leaf-c"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="details" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">The game plan</p>
+          <h2>An evening stitched together with small moments</h2>
+          <p class="lede">Arrive comfy, leave glowing. Here’s what we’re dreaming up.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <p class="label">Golden hour</p>
+            <h3>Firelight welcome</h3>
+            <p>Slip in around 4:30 with a warm drink. We’ll gather by the firepit, shake off the chill, and share first laughs.</p>
+          </article>
+          <article class="card">
+            <p class="label">Dinner</p>
+            <h3>Family-style feast</h3>
+            <p>Plates pile high at 6:00. Pass the dishes, steal the stuffing, and keep the gravy cruising down the table.</p>
+          </article>
+          <article class="card">
+            <p class="label">After dark</p>
+            <h3>Pie & stories</h3>
+            <p>When the stars peek out, we’ll cue the soft playlist, slice pies, and swap stories until the candles burn low.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="container split-layout">
+        <div class="card rich">
+          <p class="label">Look + feel</p>
+          <h3>A cozy palette with a spark</h3>
+          <p>Deep amber, spiced berry, and a little shimmer so everything feels like candlelight. Come as you are — sweaters encouraged.</p>
+          <div class="chips tone">
+            <span class="chip">Candlelight gold</span>
+            <span class="chip">Mulled wine red</span>
+            <span class="chip">Midnight plum</span>
+          </div>
+        </div>
+        <div class="card rich">
+          <p class="label">What to bring</p>
+          <h3>Pass a taste, share a tale</h3>
+          <ul class="list">
+            <li>🌿 A side or topping you love (optional, appreciated)</li>
+            <li>📚 A tiny toast, memory, or quote to read aloud</li>
+            <li>🧣 Warm layers for post-dinner stargazing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gratitude" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Share the warmth</p>
+          <h2>Pass the gratitude board around</h2>
+          <p class="lede">Add a short note we can read at the table. We’ll keep them safe here for anyone to revisit.</p>
+          <p class="hint live-hint">When a backend is configured, these notes stay in one shared place for everyone.</p>
+        </div>
+
+        <div class="gratitude-grid">
+          <form class="card form" id="gratitude-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Maya" required>
+
+            <label for="message">Your note</label>
+            <textarea id="message" name="message" rows="4" maxlength="180" placeholder="A quick line of thanks or love." required></textarea>
+            <p class="hint">Max 180 characters. We’ll pin the freshest notes to the top.</p>
+            <p class="hint" id="note-status"></p>
+            <button class="btn primary" type="submit">Add my note</button>
+          </form>
+
+          <div class="card notes">
+            <div class="notes-header">
+              <div>
+                <p class="label">Board</p>
+                <h3>Kind words to pass around</h3>
+              </div>
+              <span class="badge" id="note-count">0</span>
+            </div>
+            <ul id="notes-list" class="notes-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section footer">
+    <div class="container footer-content">
+      <div>
+        <p class="eyebrow">Our table</p>
+        <p class="lede">If you’re reading this, you’re family. Thanks for making the season bright.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn ghost" href="#details">See the flow</a>
+        <a class="btn primary" href="#gratitude">Leave a note</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="backend.config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
