@@ -11,18 +11,18 @@
   const storageKey = "thanksgiving-gratitude-notes";
   const defaultNotes = [
     {
-      name: "Grandma Ruth",
-      message: "Save me a corner piece of pumpkin pie — I’m bringing extra whipped cream.",
+      name: "Maya",
+      message: "Grateful for friends near and far. Distance means nothing when hearts are connected. Happy Thanksgiving!",
       created: new Date(Date.now() - 1000 * 60 * 60 * 36).toISOString(),
     },
     {
-      name: "Sam & Lee",
-      message: "We’re thankful for this crew and the loudest laugh track. Can’t wait to squeeze everyone.",
+      name: "Sam",
+      message: "Thankful for the little moments that make life beautiful. Sending warmth to everyone celebrating today.",
       created: new Date(Date.now() - 1000 * 60 * 60 * 70).toISOString(),
     },
     {
-      name: "Ari",
-      message: "Calling dibs on hosting the midnight tea round. Here’s to cozy playlists and long talks.",
+      name: "Jordan",
+      message: "Counting my blessings and you're all part of them. Wishing everyone a season filled with joy and gratitude.",
       created: new Date(Date.now() - 1000 * 60 * 60 * 5).toISOString(),
     },
   ];
@@ -137,7 +137,7 @@
     if (!list.length) {
       const empty = document.createElement("li");
       empty.className = "note";
-      empty.textContent = "Add the first note and we’ll share it with the group.";
+      empty.textContent = "Be the first to share your gratitude and spread the warmth.";
       notesList.appendChild(empty);
     } else {
       list.forEach((item) => {
